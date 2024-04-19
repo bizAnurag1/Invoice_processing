@@ -4,13 +4,12 @@ from azure.storage.blob import BlobServiceClient
 import pandas as pd
  
 # Azure Form Recognizer credentials
-form_recognizer_endpoint = "https://doc-intelligence-inv-pro.cognitiveservices.azure.com/"
-form_recognizer_key = "6510688e806d4e44b1a0067f321574b0"
-model_id = "Custom_Domestic_Invoice"
- 
+form_recognizer_endpoint = "<Your endpoint>"
+form_recognizer_key = "<Your key>"
+model_id = "<custom model name>"
 # Azure Blob Storage credentials
-storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=adlstilnvoiceinput;AccountKey=iCycvf2YkC96SU9teDiTswyf6RXxJGqE8fdznzsDw1iLiN7TzVoEzdvkSW4LFMGNr53AfzRBZxOl+AStQsaZKw==;EndpointSuffix=core.windows.net"
-container_name = "test"
+storage_connection_string = "<Your connection string>"
+container_name = "<container name>"
  
 # Create clients
 form_recognizer_client = DocumentAnalysisClient(
